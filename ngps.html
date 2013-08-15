@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>NGPS frame</title>
+		<style type="text/css">
+		/*  SECTIONS  */
+		.section {
+			clear: both;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		/*  COLUMN SETUP  */
+		.col {
+			display: block;
+			float:left;
+			margin: 1% 0 1% 1.6%;
+		}
+		.col:first-child { margin-left: 0; }
+
+		/*  GROUPING  */
+		.group:before,
+		.group:after {
+			content:"";
+			display:table;
+		}
+		.group:after {
+			clear:both;
+		}
+
+		/* spans */
+
+		.span4 {
+			width: 100%; 
+		}
+
+		.span3 {
+			width: 74.6%; 
+		}
+
+		.span2 {
+			width: 49.2%; 
+		}
+
+		.span1 {
+			width: 23.8%; 
+		}
+
+		img {
+			width: 100%;
+		}
+
+		/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+		@media only screen and (max-width: 480px) {
+			.span4 {
+				width: 100%; 
+			}
+			.span3 {
+				width: 100%; 
+			}
+			.span2 {
+				width: 100%; 
+			}
+			.span1 {
+				width: 100%; 
+			}
+		}
+		</style>
+	</head>
+	<body>
+	<div class="section group">
+		<div class="span4 col">
+			<h4>Derp Derp derp derp </h4>
+			<img src="http://placekitten.com/1000/800">
+			</div>
+		</div>
+	<div class="section group">
+			<div class="span2 col">yay</div>
+			<div class="span2 col">yay</div>
+	</div>
+	</body>
+	</html>
